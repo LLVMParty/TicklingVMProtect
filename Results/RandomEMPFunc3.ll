@@ -1,0 +1,9611 @@
+./Lifter -h=VMProtectHelpers_64.bc -i=EMP.dll -f=0x1301d000
+[!] Adding command line argument: -earlycse-mssa-optimization-cap=1000000
+[!] Adding command line argument: -dse-memoryssa-defs-per-block-limit=1000000
+[!] Adding command line argument: -dse-memoryssa-partial-store-limit=1000000
+[!] Adding command line argument: -dse-memoryssa-path-check-limit=1000000
+[!] Adding command line argument: -dse-memoryssa-scanlimit=1000000
+[!] Adding command line argument: -dse-memoryssa-walklimit=1000000
+[!] Adding command line argument: -dse-memoryssa-otherbb-cost=2
+[!] Adding command line argument: -memssa-check-limit=1000000
+[!] Adding command line argument: -memdep-block-number-limit=1000000
+[!] Adding command line argument: -memdep-block-scan-limit=1000000
+[!] Adding command line argument: -gvn-max-block-speculations=1000000
+[!] Adding command line argument: -gvn-max-num-deps=1000000
+[!] Adding command line argument: -gvn-hoist-max-chain-length=-1
+[!] Adding command line argument: -gvn-hoist-max-depth=-1
+[!] Adding command line argument: -gvn-hoist-max-bbs=-1
+[!] Adding command line argument: -unroll-threshold=1000000
+[+] Opening: EMP.dll
+[+] Helpers: VMProtectHelpers_64.bc
+[*] COFF binary detected
+[i] Parsing: .text
+[i] Parsing: .EMP
+[i] Parsing: .EMP1
+[*] Discovered VmEnter(s):
+  - 0x13001334
+  - 0x1301d000
+  - 0x1301d300
+  - 0x1301d900
+  - 0x1301dba0
+  - 0x1301e800
+  - 0x1301ea00
+  - 0x1301f300
+  - 0x1301fb00
+  - 0x13020000
+  - 0x130202b0
+  - 0x13020700
+  - 0x13020760
+  - 0x130207c0
+  - 0x130209c0
+  - 0x13020da0
+  - 0x13021340
+  - 0x13021600
+  - 0x13021c00
+  - 0x13021c1d
+  - 0x13021c3a
+  - 0x13021c57
+  - 0x13022122
+  - 0x13022420
+  - 0x13022950
+  - 0x13022ac0
+  - 0x13022ba0
+  - 0x13022d90
+  - 0x13022ea0
+  - 0x13023100
+  - 0x13023750
+  - 0x130238a0
+  - 0x130239a0
+  - 0x130239b1
+  - 0x130239dd
+  - 0x13023aa0
+  - 0x13023b30
+  - 0x13023b44
+  - 0x13023c00
+  - 0x13024e00
+  - 0x130253a0
+  - 0x13025cc0
+  - 0x13025ea0
+  - 0x13026400
+  - 0x130277b0
+  - 0x13028100
+  - 0x130281b0
+  - 0x130282a0
+  - 0x13028f00
+  - 0x130292e2
+  - 0x13029500
+  - 0x1302a300
+  - 0x1302ac00
+  - 0x1302ad00
+  - 0x1302b100
+  - 0x13030800
+  - 0x13030ac1
+  - 0x13036ba0
+  - 0x13037500
+  - 0x13037587
+  - 0x1303770a
+  - 0x13037742
+  - 0x13037783
+  - 0x130377f3
+  - 0x1303782a
+  - 0x13037854
+  - 0x1303788a
+  - 0x130378d9
+  - 0x1303791b
+  - 0x1303796f
+  - 0x1303799e
+  - 0x130379d4
+  - 0x13037a5a
+  - 0x13037a97
+  - 0x13037acd
+  - 0x13037afd
+  - 0x13037b3a
+  - 0x13038c00
+  - 0x1303a100
+Handling virtual stub: 0x1301d000
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x1301d000
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 flags
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_64 0x1315cc9f
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x6d4422a8
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+[VirtualBlock] 0x1315cc9b
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x1315cc9b
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_8_LOW vmregs[6]
+[VM] PUSH_VMREG_8_LOW vmregs[17]
+[VM] PUSH_VMREG_8_LOW vmregs[17]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_32 0x425e4c4f
+[VM] PUSH_VMREG_32_LOW vmregs[3]
+[VM] PUSH_VMREG_32_LOW vmregs[3]
+[VM] NAND_32
+[VM] POP_VMREG_64 vmregs[18]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_32_LOW vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0x815
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_64 0xfffffffffffff7ea
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_8_LOW vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VSP_64
+[VM] PUSH_VMREG_16_LOWLOW vmregs[12]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[20]
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_16_LOWLOW vmregs[16]
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[12]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[12]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[12]
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[13]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_16_LOWLOW vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_VMREG_8_LOW vmregs[4]
+[VM] PUSH_VMREG_8_LOW vmregs[11]
+[VM] PUSH_VMREG_8_LOW vmregs[11]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[19]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_8_LOW vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0x815
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x815
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_16_LOWLOW vmregs[14]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[10]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[22]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[22]
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_16 0xfffe
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[13]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[18]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_16_LOWLOW vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_64 0xfffffffffffff7ee
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_8_LOW vmregs[3]
+[VM] PUSH_VMREG_8_LOW vmregs[23]
+[VM] PUSH_VMREG_8_LOW vmregs[4]
+[VM] PUSH_VMREG_8_LOW vmregs[4]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[13]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_8_LOW vmregs[21]
+[VM] POP_VMREG_16_LOWLOW vmregs[18]
+[VM] PUSH_VMREG_8_LOW vmregs[20]
+[VM] PUSH_VMREG_8_LOW vmregs[18]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_8_LOW vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_8_LOW vmregs[18]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_IMM_16 0x7
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] LOAD_SS_16
+[VM] SHR_16
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_16 0x1
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[2]
+[VM] SHL_16
+[VM] POP_VMREG_64 vmregs[21]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_16_LOWLOW vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VSP_16
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_16 0xffe0
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_32_LOW vmregs[18]
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_16 0xfffe
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[19]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[19]
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_16 0x1
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[2]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_16_LOWLOW vmregs[19]
+[VM] POP_VMREG_16_LOWLOW vmregs[13]
+[VM] PUSH_VSP_16
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_16 0xffe0
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_32 0x1
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_32_LOW vmregs[18]
+[VM] PUSH_VMREG_32_LOW vmregs[18]
+[VM] NAND_32
+[VM] POP_VMREG_64 vmregs[2]
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_32_LOW vmregs[18]
+[VM] PUSH_IMM_16 0x20
+[VM] PUSH_VMREG_8_LOW vmregs[18]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x2
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] LOAD_SS_16
+[VM] SHL_16
+[VM] POP_VMREG_64 vmregs[21]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] SHLD_32
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_8_LOW vmregs[18]
+[VM] POP_VMREG_16_LOWLOW vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_64 0xffffffffffffff2b
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0xffffffffffffff2b
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_16 0x1723
+[VM] PUSH_VMREG_16_LOWLOW vmregs[13]
+[VM] PUSH_IMM_16 0x1
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[21]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[18]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[1]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[12]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[12]
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[19]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_16_LOWLOW vmregs[13]
+[VM] POP_VMREG_16_LOWLOW vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_64 0x811
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[8]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_16 0xffe0
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_32_LOW vmregs[18]
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_16 0xfffe
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[19]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[19]
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_16 0x1
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[13]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_16_LOWLOW vmregs[19]
+[VM] POP_VMREG_16_LOWLOW vmregs[9]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[8]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_16 0xffe0
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_32 0x1
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_32_LOW vmregs[18]
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_32_LOW vmregs[18]
+[VM] PUSH_VMREG_8_LOW vmregs[6]
+[VM] PUSH_VMREG_8_LOW vmregs[18]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_8_LOW vmregs[18]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[18]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VSP_32
+[VM] PUSH_IMM_32 0x4
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_16 0x20
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] LOAD_SS_64
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x1
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] SHL_64
+[VM] PUSH_IMM_16 0x4e
+[VM] PUSH_VMREG_16_LOWLOW vmregs[16]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[16]
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_16 0xfffe
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[22]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_8_LOW vmregs[18]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_8_LOW vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0xfffffffffffff7ee
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_64 0x131394bb
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_IMM_32 0x13006de0
+[VM] POP_VMREG_32_LOW vmregs[22]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_32_LOW vmregs[22]
+[VM] LOAD_DS_8
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[2]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_8_LOW vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0x815
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_64 0x815
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] JUMP_INC
+[UNKNOWN]
+[VirtualBlock] 0x131394bf
+[WORKLIST]: 0
+[EXPLORED]: 2
+[VIRBLOCK]: 0x131394bf
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_16 0x6
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0xffffffffffffffff
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0x1313974a
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_64 0x13139664
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13006de0
+[VirtualBlock] 0x13139668
+[VirtualBlock] 0x1313974e
+[WORKLIST]: 1
+[EXPLORED]: 3
+[VIRBLOCK]: 0x13139668
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_IMM_64 0x1319bfcd
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13006de0
+[VirtualBlock] 0x1319bfd1
+[WORKLIST]: 1
+[EXPLORED]: 4
+[VIRBLOCK]: 0x1313974e
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_IMM_64 0x1319b66d
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13006de0
+[VirtualBlock] 0x1319b671
+[WORKLIST]: 1
+[EXPLORED]: 5
+[VIRBLOCK]: 0x1319bfd1
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VMREG_16_LOWLOW vmregs[14]
+[VM] PUSH_VMREG_8_LOW vmregs[19]
+[VM] POP_VMREG_16_LOWLOW vmregs[15]
+[VM] SHR_16
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[0]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_16_LOWLOW vmregs[18]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_8_LOW vmregs[3]
+[VM] POP_VMREG_8_LOW vmregs[3]
+[VM] PUSH_IMM_32 0x1
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VMREG_32_LOW vmregs[14]
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[5]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_32_LOW vmregs[18]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[18]
+[VM] PUSH_IMM_16 0x0
+[VM] POP_VMREG_16_LOWLOW vmregs[3]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_VMREG_16_LOWLOW vmregs[13]
+[VM] POP_VMREG_8_HIGH vmregs[14]
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VMREG_16_LOWLOW vmregs[14]
+[VM] SHR_16
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[0]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_16_LOWLOW vmregs[18]
+[VM] PUSH_IMM_64 0x1
+[VM] PUSH_IMM_16 0x3f
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_VMREG_16_LOWLOW vmregs[23]
+[VM] PUSH_IMM_16 0x10
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] LOAD_SS_32
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NAND_32
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_32 0x1
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[5]
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[12]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_32_LOW vmregs[3]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_IMM_16 0x1d
+[VM] POP_VMREG_8_LOW vmregs[3]
+[VM] POP_VMREG_32_HIGH vmregs[3]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[13]
+[VM] POP_VMREG_8_HIGH vmregs[14]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[16]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VMREG_16_LOWLOW vmregs[14]
+[VM] SHR_16
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_32_LOW vmregs[2]
+[VM] PUSH_IMM_16 0x20
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] LOAD_SS_64
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x1
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] SHL_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[11]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_16_LOWLOW vmregs[10]
+[VM] POP_VMREG_16_LOWLOW vmregs[1]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_8_LOW vmregs[3]
+[VM] PUSH_VMREG_8_LOW vmregs[3]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[13]
+[VM] POP_VMREG_8_HIGH vmregs[14]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_8_LOW vmregs[3]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_16 0x7
+[VM] PUSH_VMREG_8_LOW vmregs[14]
+[VM] SHR_8
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[16]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_8_HIGH vmregs[14]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[13]
+[VM] POP_VMREG_8_HIGH vmregs[14]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[13]
+[VM] POP_VMREG_8_HIGH vmregs[14]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_16_LOWLOW vmregs[0]
+[VM] PUSH_IMM_16 0x10
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] LOAD_SS_64
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x1
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] SHL_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VSP_64
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[13]
+[VM] POP_VMREG_8_HIGH vmregs[14]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_32_LOW vmregs[5]
+[VM] PUSH_IMM_16 0x20
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] LOAD_SS_64
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0x1
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] SHL_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[13]
+[VM] POP_VMREG_8_HIGH vmregs[14]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] POP_VMREG_32_LOW vmregs[10]
+[VM] POP_VMREG_32_LOW vmregs[8]
+[VM] PUSH_VMREG_32_LOW vmregs[10]
+[VM] POP_VMREG_16_LOWLOW vmregs[15]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VMREG_16_LOWLOW vmregs[10]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[10]
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_16_LOWLOW vmregs[16]
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_VMREG_16_LOWLOW vmregs[21]
+[VM] POP_VMREG_32_LOW vmregs[7]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[7]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] LOAD_SS_16
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] POP_VMREG_32_LOW vmregs[16]
+[VM] POP_VMREG_16_LOWLOW vmregs[10]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VMREG_16_LOWLOW vmregs[10]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[10]
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_16_LOWLOW vmregs[23]
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] LOAD_SS_16
+[VM] POP_VMREG_32_LOW vmregs[10]
+[VM] POP_VMREG_32_LOW vmregs[8]
+[VM] PUSH_VMREG_32_LOW vmregs[10]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_32_LOW vmregs[1]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_8_LOW vmregs[20]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_IMM_16 0x7
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] LOAD_SS_16
+[VM] SHR_16
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_16 0x1
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[1]
+[VM] SHL_16
+[VM] PUSH_VMREG_16_LOWLOW vmregs[13]
+[VM] POP_VMREG_8_HIGH vmregs[15]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_16_LOWLOW vmregs[15]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_64 0x13038dd5
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13006de0
+[VirtualBlock] 0x13038dd9
+[WORKLIST]: 1
+[EXPLORED]: 6
+[VIRBLOCK]: 0x1319b671
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_16 0x26
+[VM] PUSH_VMREG_8_LOW vmregs[19]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_8_HIGH vmregs[19]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_8_LOW vmregs[13]
+[VM] PUSH_VMREG_8_LOW vmregs[19]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_8_LOW vmregs[19]
+[VM] PUSH_VMREG_32_LOW vmregs[14]
+[VM] STORE_DS_8
+[VM] PUSH_IMM_64 0x58
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x8
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x10
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VSP_64
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_64 0xfffffffffffff7ea
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_16 0x0
+[VM] POP_VMREG_16_LOWLOW vmregs[12]
+[VM] PUSH_VMREG_8_LOW vmregs[19]
+[VM] PUSH_VMREG_8_LOW vmregs[19]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_8_HIGH vmregs[19]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_IMM_64 0x815
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_IMM_64 0x13006000
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_64 0xffffffffecf356aa
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x1319b8ba
+[VM] JUMP_INC
+[UNCONDITIONAL]
+VmNop: 0x1319b671
+[VirtualBlock] 0x1319b8be
+[WORKLIST]: 1
+[EXPLORED]: 7
+[VIRBLOCK]: 0x13038dd9
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r13
+[VM] EXIT
+[EXIT]
+VmExit: 0x13038dd9
+[WORKLIST]: 0
+[EXPLORED]: 8
+[VIRBLOCK]: 0x1319b8be
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x131106bc
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x13002030
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] LOAD_DS_64
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 rbx
+[VM] EXIT
+[EXIT]
+VmExit: 0x1319b8be
+[BLOCKS] 9
+0x1301D000 => 0x1315CC9B
+0x13038DD9 =>
+0x131394BF => 0x13139668 0x1313974E
+0x13139668 => 0x1319BFD1
+0x1313974E => 0x1319B671
+0x1315CC9B => 0x131394BF
+0x1319B671 => 0x1319B8BE
+0x1319B8BE =>
+0x1319BFD1 => 0x13038DD9
+[FunctionReturn] ret
+[FunctionCall] 0x13002030 (KERNEL32.dll::LoadLibraryA)
+[VirtualStub] 0x131106bc
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x1301d000(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !13, !noalias !18
+  %2 = add i64 %1, -8
+  %3 = add i64 %1, -16
+  %4 = load i64, i64* %rbx, align 8, !alias.scope !58, !noalias !59
+  %5 = add i64 %1, -24
+  %6 = load i64, i64* %rcx, align 8, !alias.scope !60, !noalias !61
+  %7 = add i64 %1, -32
+  %8 = load i64, i64* %rbp, align 8, !alias.scope !62, !noalias !63
+  %9 = add i64 %1, -40
+  %10 = load i64, i64* %rax, align 8, !alias.scope !64, !noalias !65
+  %11 = add i64 %1, -48
+  %12 = load i64, i64* %r11, align 8, !alias.scope !66, !noalias !67
+  %13 = add i64 %1, -56
+  %14 = load i64, i64* %rsi, align 8, !alias.scope !68, !noalias !69
+  %15 = add i64 %1, -64
+  %16 = load i64, i64* %r14, align 8, !alias.scope !70, !noalias !71
+  %17 = add i64 %1, -72
+  %18 = load i64, i64* %rdi, align 8, !alias.scope !72, !noalias !73
+  %19 = add i64 %1, -80
+  %20 = load i64, i64* %r8, align 8, !alias.scope !74, !noalias !75
+  %21 = add i64 %1, -88
+  %22 = load i64, i64* %r10, align 8, !alias.scope !76, !noalias !77
+  %23 = add i64 %1, -96
+  %24 = load i64, i64* %r13, align 8, !alias.scope !78, !noalias !79
+  %25 = add i64 %1, -104
+  %26 = load i64, i64* %r12, align 8, !alias.scope !80, !noalias !81
+  %27 = add i64 %1, -112
+  %28 = load i64, i64* %r9, align 8, !alias.scope !82, !noalias !83
+  %29 = add i64 %1, -120
+  %30 = load i64, i64* %rdx, align 8, !alias.scope !84, !noalias !85
+  %31 = add i64 %1, -128
+  %32 = load i64, i64* %r15, align 8, !alias.scope !86, !noalias !87
+  %33 = inttoptr i64 %2 to i64*
+  store i64 %10, i64* %33, align 1, !noalias !88
+  %34 = inttoptr i64 %3 to i64*
+  store i64 %4, i64* %34, align 1, !noalias !88
+  %35 = inttoptr i64 %5 to i64*
+  store i64 %6, i64* %35, align 1, !noalias !89
+  %36 = inttoptr i64 %7 to i64*
+  store i64 %30, i64* %36, align 1, !noalias !89
+  %37 = inttoptr i64 %9 to i64*
+  store i64 %8, i64* %37, align 1, !noalias !89
+  %38 = inttoptr i64 %11 to i64*
+  store i64 %9, i64* %38, align 1, !noalias !89
+  %39 = inttoptr i64 %13 to i64*
+  store i64 %14, i64* %39, align 1, !noalias !89
+  %40 = inttoptr i64 %15 to i64*
+  store i64 %18, i64* %40, align 1, !noalias !89
+  %41 = inttoptr i64 %17 to i64*
+  store i64 %20, i64* %41, align 1, !noalias !89
+  %42 = inttoptr i64 %19 to i64*
+  store i64 %28, i64* %42, align 1, !noalias !89
+  %43 = inttoptr i64 %21 to i64*
+  store i64 %22, i64* %43, align 1, !noalias !89
+  %44 = inttoptr i64 %23 to i64*
+  store i64 %12, i64* %44, align 1, !noalias !89
+  %45 = inttoptr i64 %25 to i64*
+  store i64 %26, i64* %45, align 1, !noalias !89
+  %46 = inttoptr i64 %27 to i64*
+  store i64 %24, i64* %46, align 1, !noalias !89
+  %47 = inttoptr i64 %29 to i64*
+  store i64 %16, i64* %47, align 1, !noalias !89
+  %48 = inttoptr i64 %31 to i64*
+  store i64 %32, i64* %48, align 1, !noalias !89
+  %49 = load i8, i8* inttoptr (i64 318795232 to i8*), align 32, !noalias !89
+  %50 = sub i8 0, %49
+  %51 = icmp eq i8 %49, 1, !souper !94
+  %52 = add i64 %1, -224
+  br i1 %51, label %56, label %53
+
+53:                                               ; preds = %0
+  store i8 1, i8* inttoptr (i64 318795232 to i8*), align 32, !noalias !95
+  %54 = inttoptr i64 %52 to i64*
+  store i64 319882940, i64* %54, align 1, !noalias !100
+  %55 = load i64, i64* inttoptr (i64 318775344 to i64*), align 16, !noalias !100
+  store i64 318791680, i64* %r15, align 8, !tbaa !4, !alias.scope !121, !noalias !122
+  store i64 318791680, i64* %rcx, align 8, !tbaa !4, !alias.scope !124, !noalias !125
+  store i64 318795232, i64* %rdi, align 8, !tbaa !4, !alias.scope !126, !noalias !127
+  br label %73
+
+56:                                               ; preds = %0
+  %57 = and i8 %50, 16
+  %58 = call i8 @llvm.ctpop.i8(i8 %50) #13, !range !11
+  %59 = shl nuw nsw i8 %58, 2
+  %60 = and i8 %59, 4
+  %61 = or i8 %60, %57
+  %62 = xor i8 %61, 20
+  %63 = zext i8 %62 to i64
+  %64 = add i64 %1, -34
+  %65 = add i64 %1, -26
+  %66 = shl nuw nsw i64 %63, 8
+  %67 = or i64 %66, 16384
+  %68 = inttoptr i64 %65 to i64*
+  store i64 %67, i64* %68, align 1, !noalias !128
+  %69 = inttoptr i64 %64 to i64*
+  store i64 %67, i64* %69, align 1, !noalias !128
+  %70 = inttoptr i64 %1 to i64*
+  %71 = load i64, i64* %70, align 1, !noalias !133
+  %72 = add i64 %1, 8
+  br label %73
+
+73:                                               ; preds = %56, %53
+  %74 = phi i64 [ %52, %53 ], [ %72, %56 ]
+  %75 = phi i64 [ %55, %53 ], [ %71, %56 ]
+  store i64 %74, i64* %rsp, align 8, !tbaa !4, !alias.scope !155, !noalias !156
+  ret i64 %75
+}
+
+
+Handling virtual stub: 0x131106bc
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x131106bc
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0x815
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_64 0xfffffffffffff7ea
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_64 0x1314a262
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+[VirtualBlock] 0x1314a25e
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x1314a25e
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_16 0x6
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0xffffffffffffffff
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0x13149fc5
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_64 0x1314a0ab
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x13149fc1
+[VirtualBlock] 0x1314a0a7
+[WORKLIST]: 1
+[EXPLORED]: 2
+[VIRBLOCK]: 0x13149fc1
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_64 0x13187334
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x13187330
+[WORKLIST]: 1
+[EXPLORED]: 3
+[VIRBLOCK]: 0x1314a0a7
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_64 0x130ee060
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x130ee05c
+[WORKLIST]: 1
+[EXPLORED]: 4
+[VIRBLOCK]: 0x13187330
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_IMM_64 0x1313d6d7
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] JUMP_INC
+[UNKNOWN]
+[VirtualBlock] 0x1313d6db
+[WORKLIST]: 1
+[EXPLORED]: 5
+[VIRBLOCK]: 0x130ee05c
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_64 0xfb2aa
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x130edf6e
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+VmNop: 0x130ee05c
+[VirtualBlock] 0x130edf6a
+[WORKLIST]: 1
+[EXPLORED]: 6
+[VIRBLOCK]: 0x1313d6db
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_64 0x1310d041
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x13002040
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] LOAD_DS_64
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 rbx
+[VM] EXIT
+[EXIT]
+VmExit: 0x1313d6db
+[WORKLIST]: 0
+[EXPLORED]: 7
+[VIRBLOCK]: 0x130edf6a
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_64 0x1
+[VM] PUSH_IMM_16 0x37
+[VM] PUSH_VMREG_8_LOW vmregs[7]
+[VM] PUSH_VMREG_8_LOW vmregs[7]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[23]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_8_LOW vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[6]
+[VM] PUSH_VSP_16
+[VM] PUSH_IMM_16 0x2
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_VSP_16
+[VM] PUSH_IMM_16 0x4
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[10]
+[VM] NOR_16
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] LOAD_DS_8
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[9]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_8_LOW vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x815
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x815
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_16_LOWLOW vmregs[0]
+[VM] PUSH_IMM_16 0x6
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0xffffffffffffffff
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0x130edf6e
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_IMM_64 0x130edc7d
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] JUMP_DEC
+[UNKNOWN]
+[!] Possible constant address: 0x13002040
+[!] Possible constant address: 0x13002040
+[VirtualBlock] 0x130edc79
+[VirtualBlock] 0x130edf6a
+[WORKLIST]: 1
+[EXPLORED]: 7
+[VIRBLOCK]: 0x130edc79
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_64 0x1310984c
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13002040
+[!] Possible constant address: 0x13002040
+[VirtualBlock] 0x13109850
+[WORKLIST]: 1
+[EXPLORED]: 8
+[VIRBLOCK]: 0x130edf6a
+[!] Possible constant address: 0x13002040
+[!] Possible constant address: 0x13002040
+[VirtualBlock] 0x130edc79
+[VirtualBlock] 0x130edf6a
+[WORKLIST]: 2
+[EXPLORED]: 9
+[VIRBLOCK]: 0x13109850
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_64 0x1
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x13169710
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13002040
+[!] Possible constant address: 0x13002040
+[VirtualBlock] 0x13169714
+[WORKLIST]: 0
+[EXPLORED]: 10
+[VIRBLOCK]: 0x13169714
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_64 0x1319b8ba
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13002040
+[!] Possible constant address: 0x13002040
+[VirtualBlock] 0x1319b8be
+[WORKLIST]: 0
+[EXPLORED]: 11
+[VIRBLOCK]: 0x1319b8be
+[EXIT]
+VmExit: 0x1319b8be
+[BLOCKS] 12
+0x130EDC79 => 0x13109850
+0x130EDF6A => 0x130EDC79 0x130EDF6A
+0x130EE05C => 0x130EDF6A
+0x13109850 => 0x13169714
+0x131106BC => 0x1314A25E
+0x1313D6DB =>
+0x13149FC1 => 0x13187330
+0x1314A0A7 => 0x130EE05C
+0x1314A25E => 0x13149FC1 0x1314A0A7
+0x13169714 => 0x1319B8BE
+0x13187330 => 0x1313D6DB
+0x1319B8BE =>
+[FunctionCall] 0x13002040 (KERNEL32.dll::GetProcAddress)
+[FunctionCall] 0x13002030 (KERNEL32.dll::LoadLibraryA)
+[VirtualStub] 0x1310d041
+[VirtualStub] 0x131106bc
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x131106bc(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !157, !noalias !162
+  %2 = add i64 %1, -8
+  %3 = load i64, i64* %r15, align 8, !alias.scope !201, !noalias !202
+  %4 = load i64, i64* %rax, align 8, !alias.scope !203, !noalias !204
+  %5 = icmp eq i64 %4, 0
+  %6 = inttoptr i64 %2 to i64*
+  br i1 %5, label %16, label %7
+
+7:                                                ; preds = %0, %7
+  %8 = phi i64 [ %9, %7 ], [ %3, %0 ]
+  %9 = add i64 %8, 1
+  %10 = inttoptr i64 %9 to i8*
+  %11 = load i8, i8* %10, align 1, !noalias !205
+  %12 = icmp eq i8 %11, 0
+  br i1 %12, label %13, label %7
+
+13:                                               ; preds = %7
+  %14 = add i64 %8, 2
+  store i64 319882940, i64* %6, align 1, !noalias !210
+  %15 = load i64, i64* inttoptr (i64 318775344 to i64*), align 16, !noalias !210
+  store i64 %14, i64* %r15, align 8, !tbaa !4, !alias.scope !231, !noalias !232
+  store i64 %4, i64* %r14, align 8, !tbaa !4, !alias.scope !234, !noalias !235
+  br label %19
+
+16:                                               ; preds = %0
+  %17 = load i64, i64* %r14, align 8, !alias.scope !236, !noalias !237
+  store i64 319868993, i64* %6, align 1, !noalias !238
+  %18 = load i64, i64* inttoptr (i64 318775360 to i64*), align 64, !noalias !238
+  store i64 %3, i64* %rdx, align 8, !tbaa !4, !alias.scope !259, !noalias !260
+  br label %19
+
+19:                                               ; preds = %16, %13
+  %20 = phi i64 [ %14, %13 ], [ %17, %16 ]
+  %21 = phi i64 [ %15, %13 ], [ %18, %16 ]
+  store i64 %20, i64* %rcx, align 8, !tbaa !4, !alias.scope !262, !noalias !263
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !264, !noalias !265
+  ret i64 %21
+}
+
+
+Handling virtual stub: 0x1310d041
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x1310d041
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 flags
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x1
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] LOAD_DS_8
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[7]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_8_LOW vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0xfffffffffffff7ea
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_64 0xfffffffffffff7ea
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_16 0x6
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0xffffffffffffffff
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_64 0x13193b1a
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0x13193e7b
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] JUMP_INC
+[UNKNOWN]
+[VirtualBlock] 0x13193b1e
+[VirtualBlock] 0x13193e7f
+[WORKLIST]: 1
+[EXPLORED]: 1
+[VIRBLOCK]: 0x13193b1e
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_64 0xfff40c35
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_IMM_64 0x13193be3
+[VM] JUMP_INC
+[UNCONDITIONAL]
+VmNop: 0x13193b1e
+[VirtualBlock] 0x13193be7
+[WORKLIST]: 1
+[EXPLORED]: 2
+[VIRBLOCK]: 0x13193e7f
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x131070f2
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x131070ee
+[WORKLIST]: 1
+[EXPLORED]: 3
+[VIRBLOCK]: 0x13193be7
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x1
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] LOAD_DS_8
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[7]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_8_LOW vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0xfffffffffffff7ea
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_64 0xfffffffffffff7ea
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_16 0x6
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0xffffffffffffffff
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_64 0x13193b1a
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0x13193e7b
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] JUMP_INC
+[UNKNOWN]
+[VirtualBlock] 0x13193b1e
+[VirtualBlock] 0x13193e7f
+[ProveAgain] 0x131070ee
+[ProveAgain] 0x13193be7
+[ProveAgain] 0x13193e7f
+[WORKLIST]: 2
+[EXPLORED]: 2
+[VIRBLOCK]: 0x131070ee
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_64 0x1
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0x1310eb63
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] STORE_DS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x1310eb5f
+[WORKLIST]: 1
+[EXPLORED]: 3
+[VIRBLOCK]: 0x13193e7f
+[VirtualBlock] 0x131070ee
+[WORKLIST]: 1
+[EXPLORED]: 4
+[VIRBLOCK]: 0x1310eb5f
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_64 0x9
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0x1314e578
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x1314e574
+[WORKLIST]: 0
+[EXPLORED]: 5
+[VIRBLOCK]: 0x1314e574
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] LOAD_DS_8
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[10]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_8_LOW vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x815
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x815
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0x1310f333
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x1310f32f
+[WORKLIST]: 0
+[EXPLORED]: 6
+[VIRBLOCK]: 0x1310f32f
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_16 0x6
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0xffffffffffffffff
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_IMM_64 0x1310f0a4
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x1310f18a
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x1310f0a0
+[VirtualBlock] 0x1310f186
+[WORKLIST]: 1
+[EXPLORED]: 7
+[VIRBLOCK]: 0x1310f0a0
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x1319b8ba
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] JUMP_INC
+[UNKNOWN]
+[VirtualBlock] 0x1319b8be
+[WORKLIST]: 1
+[EXPLORED]: 8
+[VIRBLOCK]: 0x1310f186
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0x1318d9c0
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] JUMP_INC
+[UNKNOWN]
+[VirtualBlock] 0x1318d9c4
+[WORKLIST]: 1
+[EXPLORED]: 9
+[VIRBLOCK]: 0x1319b8be
+[EXIT]
+VmExit: 0x1319b8be
+[WORKLIST]: 0
+[EXPLORED]: 10
+[VIRBLOCK]: 0x1318d9c4
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_64 0x131109db
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_64 0x1317210c
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] JUMP_DEC
+[UNKNOWN]
+[!] Possible constant address: 0x13002030
+[!] Possible constant address: 0x13002030
+[VirtualBlock] 0x13172108
+[WORKLIST]: 0
+[EXPLORED]: 11
+[VIRBLOCK]: 0x13172108
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_IMM_64 0xfff72b27
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0x13172043
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+VmNop: 0x13172108
+[VirtualCall] 0x1317203f => 0x13028f00
+[WORKLIST]: 1
+[EXPLORED]: 12
+[VIRBLOCK]: 0x13193be7
+[!] Possible constant address: 0x13002030
+[!] Possible constant address: 0x13002030
+[VirtualBlock] 0x13193b1e
+[VirtualBlock] 0x13193e7f
+[BLOCKS] 13
+0x131070EE => 0x1310EB5F
+0x1310D041 => 0x13193B1E 0x13193E7F
+0x1310EB5F => 0x1314E574
+0x1310F0A0 => 0x1319B8BE
+0x1310F186 => 0x1318D9C4
+0x1310F32F => 0x1310F0A0 0x1310F186
+0x1314E574 => 0x1310F32F
+0x13172108 =>
+0x1318D9C4 => 0x13172108
+0x13193B1E => 0x13193BE7
+0x13193BE7 => 0x13193B1E 0x13193E7F
+0x13193E7F => 0x131070EE
+0x1319B8BE =>
+[FunctionCall] 0x13002030 (KERNEL32.dll::LoadLibraryA)
+[FunctionCall] 0x13028f00 (<not an import>)
+[VirtualStub] 0x131106bc
+[VirtualStub] 0x131109db
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x1310d041(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !267, !noalias !272
+  %2 = add i64 %1, -8
+  %3 = load i64, i64* %rax, align 8, !alias.scope !311, !noalias !312
+  %4 = load i64, i64* %r15, align 8, !alias.scope !313, !noalias !314
+  %5 = add i64 %4, 1
+  %6 = inttoptr i64 %5 to i8*
+  %7 = load i8, i8* %6, align 1, !noalias !315
+  %8 = icmp eq i8 %7, 0
+  br i1 %8, label %15, label %9
+
+9:                                                ; preds = %0, %9
+  %10 = phi i64 [ %11, %9 ], [ %5, %0 ]
+  %11 = add i64 %10, 1
+  %12 = inttoptr i64 %11 to i8*
+  %13 = load i8, i8* %12, align 1, !noalias !316
+  %14 = icmp eq i8 %13, 0
+  br i1 %14, label %15, label %9
+
+15:                                               ; preds = %9, %0
+  %16 = phi i64 [ %5, %0 ], [ %11, %9 ]
+  %17 = add i64 %16, 1
+  %18 = inttoptr i64 %17 to i64*
+  store i64 %3, i64* %18, align 1, !noalias !321
+  %19 = add i64 %16, 10
+  %20 = inttoptr i64 %19 to i8*
+  %21 = load i8, i8* %20, align 1, !noalias !326
+  %22 = icmp eq i8 %21, 0
+  %23 = inttoptr i64 %2 to i64*
+  br i1 %22, label %26, label %24
+
+24:                                               ; preds = %15
+  store i64 319882940, i64* %23, align 1, !noalias !331
+  %25 = load i64, i64* inttoptr (i64 318775344 to i64*), align 16, !noalias !331
+  store i64 %19, i64* %r15, align 8, !tbaa !4, !alias.scope !352, !noalias !353
+  store i64 %19, i64* %rcx, align 8, !tbaa !4, !alias.scope !355, !noalias !356
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !357, !noalias !358
+  br label %27
+
+26:                                               ; preds = %15
+  store i64 319883739, i64* %23, align 1, !noalias !359
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !364, !noalias !365
+  store i64 %19, i64* %r15, align 8, !tbaa !4, !alias.scope !367, !noalias !370
+  br label %27
+
+27:                                               ; preds = %24, %26
+  %28 = phi i64 [ 318934784, %26 ], [ %25, %24 ]
+  ret i64 %28
+}
+
+
+Handling virtual stub: 0x131109db
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x131109db
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 r13
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x131807ad
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x1302b240
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 rsi
+[VM] EXIT
+[EXIT]
+VmExit: 0x131109db
+[BLOCKS] 1
+0x131109DB =>
+[FunctionCall] 0x1302b240 (<not an import>)
+[VirtualStub] 0x131807ad
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x131109db(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !390, !noalias !395
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 320341933, i64* %3, align 1, !noalias !433
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !390, !noalias !395
+  ret i64 318943808
+}
+
+
+Handling virtual stub: 0x131807ad
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x131807ad
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 rax
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x131905f4
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x1316ac8c
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+[VirtualBlock] 0x1316ac88
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x1316ac88
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x1bb35
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_64 0x1316abc3
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+VmNop: 0x1316ac88
+[VirtualCall] 0x1316abbf => 0x1302ac00
+[BLOCKS] 2
+0x1316AC88 =>
+0x131807AD => 0x1316AC88
+[FunctionCall] 0x1302ac00 (<not an import>)
+[VirtualStub] 0x131905f4
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x131807ad(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !434, !noalias !439
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 320407028, i64* %3, align 1, !noalias !479
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !434, !noalias !439
+  ret i64 318942208
+}
+
+
+Handling virtual stub: 0x131905f4
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x131905f4
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x13177123
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0x1314d53d
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+[VirtualBlock] 0x1314d539
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x1314d539
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0xfffa00b7
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_64 0x1314d474
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+VmNop: 0x1314d539
+[VirtualCall] 0x1314d470 => 0x1301d300
+[BLOCKS] 2
+0x1314D539 =>
+0x131905F4 => 0x1314D539
+[FunctionCall] 0x1301d300 (<not an import>)
+[VirtualStub] 0x13177123
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x131905f4(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !480, !noalias !485
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 320303395, i64* %3, align 1, !noalias !525
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !480, !noalias !485
+  ret i64 318886656
+}
+
+
+Handling virtual stub: 0x13177123
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x13177123
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x130e900a
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x1301d4a0
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rdi
+[VM] EXIT
+[EXIT]
+VmExit: 0x13177123
+[BLOCKS] 1
+0x13177123 =>
+[FunctionCall] 0x1301d4a0 (<not an import>)
+[VirtualStub] 0x130e900a
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x13177123(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !526, !noalias !531
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 319721482, i64* %3, align 1, !noalias !569
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !526, !noalias !531
+  ret i64 318887072
+}
+
+
+Handling virtual stub: 0x130e900a
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x130e900a
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 r13
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x1313d4e1
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x130fe86c
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+[VirtualBlock] 0x130fe868
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x130fe868
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0xfffca929
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x130fe7a3
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+VmNop: 0x130fe868
+[VirtualCall] 0x130fe79f => 0x1301f300
+[BLOCKS] 2
+0x130E900A => 0x130FE868
+0x130FE868 =>
+[FunctionCall] 0x1301f300 (<not an import>)
+[VirtualStub] 0x1313d4e1
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x130e900a(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !570, !noalias !575
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 320066785, i64* %3, align 1, !noalias !615
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !570, !noalias !575
+  ret i64 318894848
+}
+
+
+Handling virtual stub: 0x1313d4e1
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x1313d4e1
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 r14
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x1318fa98
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_64 0x13168d9c
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] JUMP_INC
+[UNCONDITIONAL]
+[VirtualBlock] 0x13168da0
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x13168da0
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_IMM_64 0xfff6b295
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_IMM_64 0x13168e65
+[VM] JUMP_INC
+[UNCONDITIONAL]
+VmNop: 0x13168da0
+[VirtualCall] 0x13168e69 => 0x1301dba0
+[BLOCKS] 2
+0x1313D4E1 => 0x13168DA0
+0x13168DA0 =>
+[FunctionCall] 0x1301dba0 (<not an import>)
+[VirtualStub] 0x1318fa98
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x1313d4e1(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !616, !noalias !621
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 320404120, i64* %3, align 1, !noalias !661
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !616, !noalias !621
+  ret i64 318888864
+}
+
+
+Handling virtual stub: 0x1318fa98
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x1318fa98
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 flags
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x1318e216
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x13119fb2
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+[VirtualBlock] 0x13119fae
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x13119fae
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0xfff74c9d
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0x13119ee9
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+VmNop: 0x13119fae
+[VirtualCall] 0x13119ee5 => 0x130202b0
+[BLOCKS] 2
+0x13119FAE =>
+0x1318FA98 => 0x13119FAE
+[FunctionCall] 0x130202b0 (<not an import>)
+[VirtualStub] 0x1318e216
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x1318fa98(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !662, !noalias !667
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 320397846, i64* %3, align 1, !noalias !707
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !662, !noalias !667
+  ret i64 318898864
+}
+
+
+Handling virtual stub: 0x1318e216
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x1318e216
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x1316c5fa
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_64 0x131772ec
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] JUMP_INC
+[UNCONDITIONAL]
+[VirtualBlock] 0x131772f0
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x131772f0
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0xda765
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_64 0x131773b5
+[VM] JUMP_INC
+[UNCONDITIONAL]
+VmNop: 0x131772f0
+[VirtualCall] 0x131773b9 => 0x13037500
+[BLOCKS] 2
+0x131772F0 =>
+0x1318E216 => 0x131772F0
+[FunctionCall] 0x13037500 (<not an import>)
+[VirtualStub] 0x1316c5fa
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x1318e216(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !708, !noalias !713
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 320259578, i64* %3, align 1, !noalias !753
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !708, !noalias !713
+  ret i64 318993664
+}
+
+
+Handling virtual stub: 0x1316c5fa
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x1316c5fa
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x13168d92
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_IMM_64 0x13038000
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 r9
+[VM] EXIT
+[EXIT]
+VmExit: 0x1316c5fa
+[BLOCKS] 1
+0x1316C5FA =>
+[FunctionCall] 0x13038000 (<not an import>)
+[VirtualStub] 0x13168d92
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x1316c5fa(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !754, !noalias !759
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 320245138, i64* %3, align 1, !noalias !797
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !754, !noalias !759
+  ret i64 318996480
+}
+
+
+Handling virtual stub: 0x13168d92
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x13168d92
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 rax
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x1318eab5
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_IMM_64 0x130201a0
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 rbx
+[VM] EXIT
+[EXIT]
+VmExit: 0x13168d92
+[BLOCKS] 1
+0x13168D92 =>
+[FunctionCall] 0x130201a0 (<not an import>)
+[VirtualStub] 0x1318eab5
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x13168d92(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !798, !noalias !803
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 320400053, i64* %3, align 1, !noalias !841
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !798, !noalias !803
+  ret i64 318898592
+}
+
+
+Handling virtual stub: 0x1318eab5
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x1318eab5
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VMREG_8_LOW vmregs[7]
+[VM] PUSH_VMREG_8_LOW vmregs[3]
+[VM] PUSH_VMREG_8_LOW vmregs[3]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_8_LOW vmregs[22]
+[VM] PUSH_VMREG_8_LOW vmregs[22]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[20]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_8_LOW vmregs[10]
+[VM] PUSH_VMREG_8_LOW vmregs[7]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[20]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VSP_64
+[VM] PUSH_VMREG_8_LOW vmregs[7]
+[VM] PUSH_VMREG_8_LOW vmregs[17]
+[VM] PUSH_VMREG_8_LOW vmregs[17]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[13]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_8_LOW vmregs[13]
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_8_LOW vmregs[6]
+[VM] PUSH_IMM_32 0x13007308
+[VM] POP_VMREG_32_LOW vmregs[12]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_IMM_16 0x2
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_32_LOW vmregs[12]
+[VM] LOAD_DS_8
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[2]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_8_LOW vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0xfffffffffffff7ea
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_64 0xfffffffffffff7ea
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_32_HIGH vmregs[12]
+[VM] PUSH_IMM_64 0x1319cb5f
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] JUMP_INC
+[UNCONDITIONAL]
+[VirtualBlock] 0x1319cb63
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x1319cb63
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_16 0x6
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_64 0xffffffffffffffff
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x1319cdee
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_64 0x1319cd08
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13007308
+[VirtualBlock] 0x1319cd0c
+[VirtualBlock] 0x1319cdf2
+[WORKLIST]: 1
+[EXPLORED]: 2
+[VIRBLOCK]: 0x1319cd0c
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_64 0x1312947f
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13007308
+[VirtualBlock] 0x13129483
+[WORKLIST]: 1
+[EXPLORED]: 3
+[VIRBLOCK]: 0x1319cdf2
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0x13110bd0
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13007308
+[VirtualBlock] 0x13110bd4
+[WORKLIST]: 1
+[EXPLORED]: 4
+[VIRBLOCK]: 0x13129483
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_64 0x13159b82
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0x1301dca0
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 rbx
+[VM] EXIT
+[EXIT]
+VmExit: 0x13129483
+[WORKLIST]: 0
+[EXPLORED]: 5
+[VIRBLOCK]: 0x13110bd4
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_64 0xd348f
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_IMM_64 0x13110c99
+[VM] JUMP_INC
+[UNCONDITIONAL]
+VmNop: 0x13110bd4
+[VirtualBlock] 0x13110c9d
+[WORKLIST]: 0
+[EXPLORED]: 6
+[VIRBLOCK]: 0x13110c9d
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_32 0x13007308
+[VM] PUSH_VMREG_8_LOW vmregs[5]
+[VM] PUSH_VMREG_8_LOW vmregs[5]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_8_LOW vmregs[7]
+[VM] PUSH_VMREG_8_LOW vmregs[7]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[14]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_8_LOW vmregs[17]
+[VM] POP_VMREG_32_LOW vmregs[1]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_32_LOW vmregs[1]
+[VM] LOAD_DS_8
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[3]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_8_LOW vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_64 0xfffffffffffff7ea
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_64 0x815
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_32_HIGH vmregs[1]
+[VM] PUSH_IMM_16 0x6
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0xffffffffffffffff
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x1311107b
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_IMM_64 0x13110f95
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13007308
+[!] Possible constant address: 0x13007308
+[VirtualBlock] 0x13110f99
+[VirtualBlock] 0x1311107f
+[WORKLIST]: 1
+[EXPLORED]: 7
+[VIRBLOCK]: 0x13110f99
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x131394bb
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] JUMP_DEC
+[UNKNOWN]
+[!] Possible constant address: 0x13007308
+[!] Possible constant address: 0x13007308
+[VirtualBlock] 0x131394b7
+[WORKLIST]: 1
+[EXPLORED]: 8
+[VIRBLOCK]: 0x1311107f
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_64 0x13147352
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] JUMP_DEC
+[UNKNOWN]
+[!] Possible constant address: 0x13007308
+[!] Possible constant address: 0x13007308
+[VirtualBlock] 0x1314734e
+[WORKLIST]: 1
+[EXPLORED]: 9
+[VIRBLOCK]: 0x131394b7
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_64 0x13103a76
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x1301dda0
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rdi
+[VM] EXIT
+[EXIT]
+VmExit: 0x131394b7
+[WORKLIST]: 0
+[EXPLORED]: 10
+[VIRBLOCK]: 0x1314734e
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_IMM_64 0xfff2e635
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_IMM_64 0x13147289
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+VmNop: 0x1314734e
+[VirtualBlock] 0x13147285
+[WORKLIST]: 0
+[EXPLORED]: 11
+[VIRBLOCK]: 0x13147285
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_16 0xff
+[VM] PUSH_VMREG_8_LOW vmregs[23]
+[VM] ADD_8
+[VM] PUSH_VMREG_16_LOWLOW vmregs[11]
+[VM] PUSH_IMM_16 0xffff
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_16_LOWLOW vmregs[11]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_8_HIGH vmregs[23]
+[VM] PUSH_IMM_32 0x13006f00
+[VM] POP_VMREG_32_LOW vmregs[7]
+[VM] PUSH_VMREG_8_LOW vmregs[9]
+[VM] PUSH_VMREG_8_LOW vmregs[9]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_8_LOW vmregs[9]
+[VM] PUSH_VMREG_8_LOW vmregs[9]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[2]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_8_LOW vmregs[9]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_32_LOW vmregs[17]
+[VM] PUSH_IMM_16 0x20
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_IMM_32 0x1
+[VM] POP_VMREG_32_LOW vmregs[11]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[11]
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] LOAD_SS_64
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0x1
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] SHL_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_32_HIGH vmregs[7]
+[VM] PUSH_IMM_64 0x130f1c16
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 rbp
+[VM] EXIT
+[EXIT]
+VmExit: 0x13147285
+[BLOCKS] 12
+0x13110BD4 => 0x13110C9D
+0x13110C9D => 0x13110F99 0x1311107F
+0x13110F99 => 0x131394B7
+0x1311107F => 0x1314734E
+0x13129483 =>
+0x131394B7 =>
+0x13147285 =>
+0x1314734E => 0x13147285
+0x1318EAB5 => 0x1319CB63
+0x1319CB63 => 0x1319CD0C 0x1319CDF2
+0x1319CD0C => 0x13129483
+0x1319CDF2 => 0x13110BD4
+[FunctionCall] 0x1301dca0 (<not an import>)
+[FunctionCall] 0x1301dda0 (<not an import>)
+[UnsupportedInstruction] 0x130f1c16
+[VirtualStub] 0x130f1c18
+[VirtualStub] 0x13103a76
+[VirtualStub] 0x13159b82
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x1318eab5(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !842, !noalias !847
+  %2 = add i64 %1, -8
+  %3 = load i64, i64* %rcx, align 8, !alias.scope !886, !noalias !887
+  %4 = load i64, i64* %r10, align 8, !alias.scope !888, !noalias !889
+  %5 = load i8, i8* inttoptr (i64 318796552 to i8*), align 8, !noalias !890
+  %6 = icmp eq i8 %5, 2
+  br i1 %6, label %21, label %7
+
+7:                                                ; preds = %0
+  %8 = add i64 %1, -4
+  %9 = inttoptr i64 %8 to i32*
+  store i32 0, i32* %9, align 1, !noalias !891
+  %10 = icmp eq i8 %5, 1
+  br i1 %10, label %19, label %11
+
+11:                                               ; preds = %7
+  %12 = and i64 %4, 4294967295
+  %13 = shl nuw nsw i64 %12, 1
+  %14 = and i64 %13, 4294967296
+  %15 = sub nsw i64 %12, %14
+  %16 = shl i64 %3, 8
+  %17 = add i64 %16, 65280
+  %18 = and i64 %17, 65280
+  store i64 %15, i64* %rdx, align 8, !tbaa !4, !alias.scope !896, !noalias !899
+  store i64 1, i64* %rax, align 8, !tbaa !4, !alias.scope !919, !noalias !920
+  store i64 %18, i64* %rcx, align 8, !tbaa !4, !alias.scope !921, !noalias !922
+  store i64 318795520, i64* %rdi, align 8, !tbaa !4, !alias.scope !923, !noalias !924
+  br label %23
+
+19:                                               ; preds = %7
+  %20 = inttoptr i64 %2 to i64*
+  store i64 319830646, i64* %20, align 1, !noalias !925
+  store i64 318796552, i64* %rax, align 8, !tbaa !4, !alias.scope !946, !noalias !947
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !949, !noalias !950
+  br label %23
+
+21:                                               ; preds = %0
+  %22 = inttoptr i64 %2 to i64*
+  store i64 320183170, i64* %22, align 1, !noalias !951
+  store i64 318796552, i64* %rax, align 8, !tbaa !4, !alias.scope !972, !noalias !973
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !975, !noalias !976
+  br label %23
+
+23:                                               ; preds = %21, %19, %11
+  %24 = phi i64 [ 319757334, %11 ], [ 318889376, %19 ], [ 318889120, %21 ]
+  ret i64 %24
+}
+
+
+Handling virtual stub: 0x130f1c18
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x130f1c18
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_8_LOW vmregs[22]
+[VM] PUSH_IMM_32 0x1
+[VM] PUSH_IMM_16 0x7
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_VMREG_8_LOW vmregs[8]
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[16]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x2
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] LOAD_SS_16
+[VM] SHL_16
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_8_LOW vmregs[8]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] SHRD_32
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_8_LOW vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_16_LOWLOW vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[15]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_16 0xfff0
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[18]
+[VM] SHR_16
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_16 0xfffe
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[21]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[21]
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_16 0x1
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_16_LOWLOW vmregs[21]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[15]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_IMM_16 0xfff0
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_16 0x1
+[VM] SHL_16
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[18]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[18]
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_16_LOWLOW vmregs[18]
+[VM] STORE_DS_64
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_64 0x10
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_64 0x8
+[VM] ADD_64
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VMREG_16_LOWLOW vmregs[18]
+[VM] SHR_16
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x1
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[17]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[18]
+[VM] POP_VMREG_32_LOW vmregs[18]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[18]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[20]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_16 0xffc0
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_16 0xfffe
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[3]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[3]
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_IMM_16 0x1
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[5]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_16_LOWLOW vmregs[3]
+[VM] POP_VMREG_16_LOWLOW vmregs[17]
+[VM] POP_VMREG_32_LOW vmregs[21]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[20]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] PUSH_IMM_16 0x3c
+[VM] PUSH_VMREG_8_LOW vmregs[9]
+[VM] PUSH_VMREG_8_LOW vmregs[9]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[8]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_8_LOW vmregs[23]
+[VM] PUSH_IMM_32 0x80000002
+[VM] POP_VMREG_32_LOW vmregs[18]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[18]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_16 0xffc0
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_IMM_64 0x1
+[VM] SHL_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] STORE_DS_64
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] STORE_DS_64
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_64 0x18
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] STORE_DS_64
+[VM] PUSH_IMM_64 0x13142355
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 rbp
+[VM] EXIT
+[EXIT]
+VmExit: 0x130f1c18
+[BLOCKS] 1
+0x130F1C18 =>
+[UnsupportedInstruction] 0x13142355
+[VirtualStub] 0x13142357
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x130f1c18(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rdi, align 8, !alias.scope !977, !noalias !982
+  %2 = load i64, i64* %rcx, align 8, !alias.scope !1020, !noalias !1021
+  %3 = load i64, i64* %rbx, align 8, !alias.scope !1022, !noalias !1023
+  %4 = load i64, i64* %r8, align 8, !alias.scope !1024, !noalias !1025
+  %5 = load i64, i64* %rax, align 8, !alias.scope !1026, !noalias !1027
+  %6 = load i64, i64* %rdx, align 8, !alias.scope !1028, !noalias !1029
+  %7 = inttoptr i64 %1 to i64*
+  store i64 %5, i64* %7, align 1, !noalias !1030
+  %8 = add i64 %1, 8
+  %9 = add i64 %2, 1
+  %10 = and i64 %4, 63
+  %11 = shl nuw i64 1, %10
+  %12 = or i64 %11, %9
+  %13 = inttoptr i64 %8 to i64*
+  store i64 %3, i64* %13, align 1, !noalias !1030
+  %14 = add i64 %1, 16
+  %15 = inttoptr i64 %14 to i64*
+  store i64 %2, i64* %15, align 1, !noalias !1030
+  %16 = add i64 %1, 24
+  %17 = inttoptr i64 %16 to i64*
+  store i64 %6, i64* %17, align 1, !noalias !1030
+  store i64 2147483650, i64* %rax, align 8, !tbaa !4, !alias.scope !1026, !noalias !1027
+  store i64 %12, i64* %rcx, align 8, !tbaa !4, !alias.scope !1020, !noalias !1021
+  ret i64 320086869
+}
+
+
+Handling virtual stub: 0x13103a76
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x13103a76
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_16 0xff
+[VM] PUSH_VMREG_8_LOW vmregs[23]
+[VM] ADD_8
+[VM] PUSH_VMREG_16_LOWLOW vmregs[11]
+[VM] PUSH_IMM_16 0xffff
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_16_LOWLOW vmregs[11]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_8_HIGH vmregs[23]
+[VM] PUSH_IMM_32 0x13006f00
+[VM] POP_VMREG_32_LOW vmregs[7]
+[VM] PUSH_VMREG_8_LOW vmregs[9]
+[VM] PUSH_VMREG_8_LOW vmregs[9]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_8_LOW vmregs[9]
+[VM] PUSH_VMREG_8_LOW vmregs[9]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[2]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_8_LOW vmregs[9]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_32_LOW vmregs[17]
+[VM] PUSH_IMM_16 0x20
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_IMM_32 0x1
+[VM] POP_VMREG_32_LOW vmregs[11]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[11]
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] LOAD_SS_64
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0x1
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] SHL_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_32_HIGH vmregs[7]
+[VM] PUSH_IMM_64 0x130f1c16
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 rbp
+[VM] EXIT
+[EXIT]
+VmExit: 0x13103a76
+[BLOCKS] 1
+0x13103A76 =>
+[UnsupportedInstruction] 0x130f1c16
+[VirtualStub] 0x130f1c18
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x13103a76(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %r10, align 8, !alias.scope !1031, !noalias !1036
+  %2 = load i64, i64* %rcx, align 8, !alias.scope !1074, !noalias !1075
+  %3 = and i64 %1, 4294967295
+  %4 = shl nuw nsw i64 %3, 1
+  %5 = and i64 %4, 4294967296
+  %6 = sub nsw i64 %3, %5
+  %7 = shl i64 %2, 8
+  %8 = add i64 %7, 65280
+  %9 = and i64 %8, 65280
+  store i64 %6, i64* %rdx, align 8, !tbaa !4, !alias.scope !1076, !noalias !1077
+  store i64 1, i64* %rax, align 8, !tbaa !4, !alias.scope !1078, !noalias !1079
+  store i64 %9, i64* %rcx, align 8, !tbaa !4, !alias.scope !1074, !noalias !1075
+  store i64 318795520, i64* %rdi, align 8, !tbaa !4, !alias.scope !1080, !noalias !1081
+  ret i64 319757334
+}
+
+
+Handling virtual stub: 0x13159b82
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x13159b82
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_32 0x13007308
+[VM] PUSH_VMREG_8_LOW vmregs[5]
+[VM] PUSH_VMREG_8_LOW vmregs[5]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_8_LOW vmregs[7]
+[VM] PUSH_VMREG_8_LOW vmregs[7]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[14]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_8_LOW vmregs[17]
+[VM] POP_VMREG_32_LOW vmregs[1]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_32_LOW vmregs[1]
+[VM] LOAD_DS_8
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[3]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_8_LOW vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_64 0xfffffffffffff7ea
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_64 0x815
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_32_HIGH vmregs[1]
+[VM] PUSH_IMM_16 0x6
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0xffffffffffffffff
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x1311107b
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_IMM_64 0x13110f95
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] JUMP_INC
+[UNKNOWN]
+[!] Possible constant address: 0x13007308
+[VirtualBlock] 0x13110f99
+[VirtualBlock] 0x1311107f
+[WORKLIST]: 1
+[EXPLORED]: 1
+[VIRBLOCK]: 0x13110f99
+[UNKNOWN]
+[!] Possible constant address: 0x13007308
+[VirtualBlock] 0x131394b7
+[WORKLIST]: 1
+[EXPLORED]: 2
+[VIRBLOCK]: 0x1311107f
+[UNKNOWN]
+[!] Possible constant address: 0x13007308
+[VirtualBlock] 0x1314734e
+[WORKLIST]: 1
+[EXPLORED]: 3
+[VIRBLOCK]: 0x131394b7
+[EXIT]
+VmExit: 0x131394b7
+[WORKLIST]: 0
+[EXPLORED]: 4
+[VIRBLOCK]: 0x1314734e
+[UNCONDITIONAL]
+VmNop: 0x1314734e
+[VirtualBlock] 0x13147285
+[WORKLIST]: 0
+[EXPLORED]: 5
+[VIRBLOCK]: 0x13147285
+[EXIT]
+VmExit: 0x13147285
+[BLOCKS] 6
+0x13110F99 => 0x131394B7
+0x1311107F => 0x1314734E
+0x131394B7 =>
+0x13147285 =>
+0x1314734E => 0x13147285
+0x13159B82 => 0x13110F99 0x1311107F
+[UnsupportedInstruction] 0x130f1c16
+[FunctionCall] 0x1301dda0 (<not an import>)
+[VirtualStub] 0x130f1c18
+[VirtualStub] 0x13103a76
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x13159b82(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !1082, !noalias !1087
+  %2 = add i64 %1, -8
+  %3 = load i8, i8* inttoptr (i64 318796552 to i8*), align 8, !noalias !1125
+  %4 = icmp eq i8 %3, 1
+  br i1 %4, label %15, label %5
+
+5:                                                ; preds = %0
+  %6 = load i64, i64* %r10, align 8, !alias.scope !1126, !noalias !1127
+  %7 = load i64, i64* %rcx, align 8, !alias.scope !1128, !noalias !1129
+  %8 = and i64 %6, 4294967295
+  %9 = shl nuw nsw i64 %8, 1
+  %10 = and i64 %9, 4294967296
+  %11 = sub nsw i64 %8, %10
+  %12 = shl i64 %7, 8
+  %13 = add i64 %12, 65280
+  %14 = and i64 %13, 65280
+  store i64 %11, i64* %rdx, align 8, !tbaa !4, !alias.scope !1130, !noalias !1133
+  store i64 1, i64* %rax, align 8, !tbaa !4, !alias.scope !1153, !noalias !1154
+  store i64 %14, i64* %rcx, align 8, !tbaa !4, !alias.scope !1155, !noalias !1156
+  store i64 318795520, i64* %rdi, align 8, !tbaa !4, !alias.scope !1157, !noalias !1158
+  br label %17
+
+15:                                               ; preds = %0
+  %16 = inttoptr i64 %2 to i64*
+  store i64 319830646, i64* %16, align 1, !noalias !1159
+  store i64 318796552, i64* %rax, align 8, !tbaa !4, !alias.scope !1180, !noalias !1181
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !1183, !noalias !1184
+  br label %17
+
+17:                                               ; preds = %15, %5
+  %18 = phi i64 [ 319757334, %5 ], [ 318889376, %15 ]
+  ret i64 %18
+}
+
+
+Handling virtual stub: 0x13142357
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x13142357
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x30
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[23]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[3]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[3]
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[11]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_16_LOWLOW vmregs[7]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_IMM_16 0x91
+[VM] PUSH_VMREG_8_LOW vmregs[0]
+[VM] PUSH_VMREG_8_LOW vmregs[0]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[1]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_8_LOW vmregs[11]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_64 0x13107106
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_64 0x18
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_16 0xbe
+[VM] PUSH_VMREG_32_LOW vmregs[16]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] SHRD_32
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_32_LOW vmregs[16]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0xffffffffffffff2b
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0xffffffffffffff2b
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] STORE_DS_64
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_16 0xcf
+[VM] PUSH_IMM_32 0x1
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_VMREG_16_LOWLOW vmregs[16]
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NAND_32
+[VM] POP_VMREG_64 vmregs[6]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] PUSH_VMREG_16_LOWLOW vmregs[16]
+[VM] SHRD_32
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_16_LOWLOW vmregs[16]
+[VM] POP_VMREG_16_LOWLOW vmregs[4]
+[VM] PUSH_IMM_64 0x8
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_32 0x80000003
+[VM] PUSH_VMREG_8_LOW vmregs[18]
+[VM] PUSH_VMREG_8_LOW vmregs[23]
+[VM] SHL_8
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_16 0xb9
+[VM] PUSH_VMREG_8_LOW vmregs[18]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x2
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] LOAD_SS_16
+[VM] SHL_16
+[VM] POP_VMREG_64 vmregs[22]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] SHLD_32
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_8_HIGH vmregs[18]
+[VM] POP_VMREG_16_LOWLOW vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_IMM_64 0xffffffffffffff2b
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_64 0xffffffffffffff2b
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_8_HIGH vmregs[23]
+[VM] POP_VMREG_32_LOW vmregs[16]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[16]
+[VM] STORE_DS_64
+[VM] PUSH_IMM_64 0x10
+[VM] ADD_64
+[VM] PUSH_IMM_64 0x1
+[VM] PUSH_IMM_16 0x3f
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] STORE_DS_64
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] STORE_DS_64
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rdi
+[VM] EXIT
+[EXIT]
+VmExit: 0x13142357
+[BLOCKS] 1
+0x13142357 =>
+[UnsupportedInstruction] 0x13107106
+[VirtualStub] 0x13107108
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x13142357(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rdi, align 8, !alias.scope !1185, !noalias !1190
+  %2 = load i64, i64* %rbx, align 8, !alias.scope !1228, !noalias !1229
+  %3 = load i64, i64* %rax, align 8, !alias.scope !1230, !noalias !1231
+  %4 = load i64, i64* %rdx, align 8, !alias.scope !1232, !noalias !1233
+  %5 = load i64, i64* %rcx, align 8, !alias.scope !1234, !noalias !1235
+  %6 = add i64 %1, 48
+  %7 = trunc i64 %2 to i32
+  %8 = inttoptr i64 %6 to i64*
+  store i64 %3, i64* %8, align 1, !noalias !1236
+  %9 = trunc i64 %5 to i16
+  %10 = and i16 %9, 255
+  %11 = zext i16 %10 to i32
+  %12 = shl i32 %7, %11
+  %13 = add i64 %1, 56
+  %14 = shl i16 %9, 8
+  %15 = or i16 %10, %14
+  %16 = zext i16 %15 to i64
+  %17 = inttoptr i64 %13 to i64*
+  store i64 %2, i64* %17, align 1, !noalias !1236
+  %18 = add i64 %1, 64
+  %19 = inttoptr i64 %18 to i64*
+  store i64 %5, i64* %19, align 1, !noalias !1236
+  %20 = add i64 %1, 72
+  %21 = inttoptr i64 %20 to i64*
+  store i64 %4, i64* %21, align 1, !noalias !1236
+  %22 = shl i32 %12, 8
+  %23 = and i32 %22, 65280
+  %24 = zext i32 %23 to i64
+  %25 = shl nuw nsw i64 %16, 1
+  %26 = and i64 %25, 65280
+  store i64 %26, i64* %rcx, align 8, !tbaa !4, !alias.scope !1234, !noalias !1235
+  store i64 0, i64* %rdx, align 8, !tbaa !4, !alias.scope !1232, !noalias !1233
+  store i64 2147483651, i64* %rax, align 8, !tbaa !4, !alias.scope !1230, !noalias !1231
+  store i64 %24, i64* %rbx, align 8, !tbaa !4, !alias.scope !1228, !noalias !1229
+  store i64 %6, i64* %rdi, align 8, !tbaa !4, !alias.scope !1185, !noalias !1190
+  ret i64 319844614
+}
+
+
+Handling virtual stub: 0x13107108
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x13107108
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 r14
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x30
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_IMM_64 0x13195844
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+[VirtualBlock] 0x13195840
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x13195840
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_32 0x1
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VMREG_32_LOW vmregs[11]
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[21]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_32_LOW vmregs[11]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] STORE_DS_64
+[VM] PUSH_IMM_64 0x130fb196
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_8_LOW vmregs[8]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_IMM_16 0x7
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[2]
+[VM] LOAD_SS_16
+[VM] SHR_16
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_16 0x1
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[2]
+[VM] SHL_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_16_LOWLOW vmregs[14]
+[VM] PUSH_VMREG_32_LOW vmregs[14]
+[VM] PUSH_VMREG_32_LOW vmregs[14]
+[VM] POP_VMREG_32_LOW vmregs[14]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[14]
+[VM] POP_VMREG_32_LOW vmregs[14]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_VMREG_16_LOWLOW vmregs[14]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_16_LOWLOW vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_32_HIGH vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0x8
+[VM] PUSH_IMM_32 0x80000004
+[VM] POP_VMREG_32_LOW vmregs[14]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[14]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] STORE_DS_64
+[VM] PUSH_IMM_64 0x10
+[VM] ADD_64
+[VM] PUSH_IMM_16 0x9b
+[VM] PUSH_VMREG_16_LOWLOW vmregs[19]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[8]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] SHRD_32
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_16_LOWLOW vmregs[8]
+[VM] POP_VMREG_16_LOWLOW vmregs[4]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] STORE_DS_64
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0x18
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[5]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_16 0xffc0
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_IMM_16 0xfffe
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[21]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[21]
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_16 0x1
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[10]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_16_LOWLOW vmregs[21]
+[VM] POP_VMREG_16_LOWLOW vmregs[20]
+[VM] POP_VMREG_32_LOW vmregs[10]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[5]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_16 0xffc0
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_IMM_64 0x1
+[VM] SHL_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_8_LOW vmregs[11]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[11]
+[VM] SHL_16
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_16_LOWLOW vmregs[11]
+[VM] STORE_DS_64
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rdi
+[VM] EXIT
+[EXIT]
+VmExit: 0x13195840
+[BLOCKS] 2
+0x13107108 => 0x13195840
+0x13195840 =>
+[UnsupportedInstruction] 0x130fb196
+[VirtualStub] 0x130fb198
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x13107108(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsi, align 8, !alias.scope !1237, !noalias !1242
+  %2 = load i64, i64* %rax, align 8, !alias.scope !1281, !noalias !1282
+  %3 = load i64, i64* %rdi, align 8, !alias.scope !1283, !noalias !1284
+  %4 = load i64, i64* %rdx, align 8, !alias.scope !1285, !noalias !1286
+  %5 = load i64, i64* %r9, align 8, !alias.scope !1287, !noalias !1288
+  %6 = load i64, i64* %rcx, align 8, !alias.scope !1289, !noalias !1290
+  %7 = load i64, i64* %rbx, align 8, !alias.scope !1291, !noalias !1292
+  %8 = add i64 %3, 48
+  %9 = inttoptr i64 %8 to i64*
+  store i64 %2, i64* %9, align 1, !noalias !1293
+  %10 = add i64 %3, 56
+  %11 = inttoptr i64 %10 to i64*
+  store i64 %7, i64* %11, align 1, !noalias !1293
+  %12 = add i64 %3, 64
+  %13 = trunc i64 %5 to i32
+  %14 = shl i32 %13, 16
+  %15 = trunc i64 %6 to i32
+  %16 = call i32 @llvm.fshl.i32(i32 %15, i32 %14, i32 5) #13
+  %17 = and i64 %6, -65536
+  %18 = and i32 %16, 65535
+  %19 = inttoptr i64 %12 to i64*
+  store i64 %6, i64* %19, align 1, !noalias !1293
+  %20 = and i64 %1, 63
+  %21 = shl nuw i64 1, %20
+  %22 = or i64 %17, %21
+  %23 = trunc i64 %22 to i32
+  %24 = or i32 %18, %23
+  %25 = and i32 %24, 255
+  %26 = shl i32 %24, %25
+  %27 = add i64 %3, 72
+  %28 = and i64 %22, -65536
+  %29 = and i32 %26, 65535
+  %30 = zext i32 %29 to i64
+  %31 = or i64 %28, %30
+  %32 = inttoptr i64 %27 to i64*
+  store i64 %4, i64* %32, align 1, !noalias !1293
+  store i64 %31, i64* %rcx, align 8, !tbaa !4, !alias.scope !1314, !noalias !1315
+  store i64 2147483652, i64* %rax, align 8, !tbaa !4, !alias.scope !1317, !noalias !1318
+  store i64 %8, i64* %rdi, align 8, !tbaa !4, !alias.scope !1319, !noalias !1320
+  ret i64 319795606
+}
+
+
+Handling virtual stub: 0x130fb198
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x130fb198
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_IMM_64 0x1316c1d8
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+[VirtualBlock] 0x1316c1d4
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x1316c1d4
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_64 0x30
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0x1317d57e
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0x18
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0x10
+[VM] ADD_64
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_8_LOW vmregs[2]
+[VM] PUSH_VMREG_8_LOW vmregs[11]
+[VM] PUSH_VMREG_8_LOW vmregs[11]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[15]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_8_LOW vmregs[11]
+[VM] PUSH_VMREG_8_LOW vmregs[3]
+[VM] POP_VMREG_16_LOWLOW vmregs[11]
+[VM] STORE_DS_64
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0x8
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_VMREG_8_LOW vmregs[11]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_8_HIGH vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_8_LOW vmregs[0]
+[VM] PUSH_IMM_64 0x1
+[VM] PUSH_IMM_16 0x3f
+[VM] PUSH_IMM_16 0x36
+[VM] PUSH_VMREG_8_LOW vmregs[5]
+[VM] PUSH_VMREG_8_LOW vmregs[5]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[21]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_16 0xc9
+[VM] PUSH_VMREG_8_LOW vmregs[5]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[21]
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_8_HIGH vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] SHRD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_8_LOW vmregs[8]
+[VM] PUSH_IMM_16 0xff
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_8_HIGH vmregs[8]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VMREG_32_LOW vmregs[8]
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_IMM_16 0xfffe
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[23]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[23]
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_16 0x5a
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] SHRD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[8]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_32 0x1
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VMREG_32_LOW vmregs[11]
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[22]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_32_LOW vmregs[20]
+[VM] PUSH_IMM_32 0x2
+[VM] POP_VMREG_32_LOW vmregs[11]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[11]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[20]
+[VM] POP_VMREG_16_LOWLOW vmregs[23]
+[VM] PUSH_IMM_32 0x1
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VMREG_32_LOW vmregs[11]
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[19]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_32_LOW vmregs[20]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[20]
+[VM] PUSH_IMM_16 0x21
+[VM] PUSH_VMREG_8_LOW vmregs[14]
+[VM] PUSH_VMREG_8_LOW vmregs[14]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[21]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_8_LOW vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0x815
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_IMM_64 0x815
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_16_LOWLOW vmregs[18]
+[VM] STORE_DS_64
+[VM] PUSH_IMM_16 0x5d
+[VM] PUSH_VMREG_32_LOW vmregs[0]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] SHLD_32
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_32_LOW vmregs[0]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_64 0xd4
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_IMM_64 0xd4
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] STORE_DS_64
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] STORE_DS_64
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 r9
+[VM] EXIT
+[EXIT]
+VmExit: 0x1316c1d4
+[BLOCKS] 2
+0x130FB198 => 0x1316C1D4
+0x1316C1D4 =>
+[UnsupportedInstruction] 0x1317d57e
+[VirtualStub] 0x1317d580
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x130fb198(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rcx, align 8, !alias.scope !1321, !noalias !1326
+  %2 = load i64, i64* %rax, align 8, !alias.scope !1366, !noalias !1367
+  %3 = load i64, i64* %rdi, align 8, !alias.scope !1368, !noalias !1369
+  %4 = load i64, i64* %rbx, align 8, !alias.scope !1370, !noalias !1371
+  %5 = load i64, i64* %rdx, align 8, !alias.scope !1372, !noalias !1373
+  %6 = add i64 %3, 48
+  %7 = add i64 %3, 64
+  %8 = inttoptr i64 %6 to i64*
+  store i64 %2, i64* %8, align 1, !noalias !1374
+  %9 = add i64 %3, 56
+  %10 = inttoptr i64 %9 to i64*
+  store i64 %4, i64* %10, align 1, !noalias !1374
+  %11 = shl i64 %1, 29
+  %12 = lshr i64 %1, 3
+  %13 = and i64 %12, 536870911
+  %14 = and i64 %11, 3758096384
+  %15 = or i64 %13, %14
+  %16 = inttoptr i64 %7 to i64*
+  store i64 %1, i64* %16, align 1, !noalias !1374
+  %17 = add i64 %3, 72
+  %18 = inttoptr i64 %17 to i64*
+  store i64 %5, i64* %18, align 1, !noalias !1374
+  %19 = shl i64 %4, 8
+  %20 = and i64 %19, 65280
+  %21 = xor i64 %20, 51456
+  store i64 0, i64* %rdx, align 8, !tbaa !4, !alias.scope !1395, !noalias !1396
+  store i64 2, i64* %rax, align 8, !tbaa !4, !alias.scope !1398, !noalias !1399
+  store i64 %6, i64* %rdi, align 8, !tbaa !4, !alias.scope !1400, !noalias !1401
+  store i64 %21, i64* %rbx, align 8, !tbaa !4, !alias.scope !1402, !noalias !1403
+  store i64 %15, i64* %rcx, align 8, !tbaa !4, !alias.scope !1404, !noalias !1405
+  ret i64 320329086
+}
+
+
+Handling virtual stub: 0x1317d580
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x1317d580
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 flags
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_VMREG_8_LOW vmregs[14]
+[VM] PUSH_VMREG_8_LOW vmregs[5]
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_16 0x8549
+[VM] PUSH_VMREG_16_LOWLOW vmregs[15]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[15]
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_16_LOWLOW vmregs[17]
+[VM] LOAD_SS_8
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_IMM_64 0xfffffffffffffffe
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x1
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x30
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] NAND_8
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] STORE_DS_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_8_LOW vmregs[15]
+[VM] PUSH_IMM_64 0x13167bd9
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+[VirtualBlock] 0x13167bd5
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x13167bd5
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x8
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[23]
+[VM] STORE_DS_64
+[VM] PUSH_IMM_64 0x13103ddf
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x18
+[VM] ADD_64
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x10
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] STORE_DS_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] STORE_DS_64
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x13103ddb
+[WORKLIST]: 0
+[EXPLORED]: 2
+[VIRBLOCK]: 0x13103ddb
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_IMM_64 0x1317430b
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_IMM_64 0x13121cd6
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x13121cd2
+[WORKLIST]: 0
+[EXPLORED]: 3
+[VIRBLOCK]: 0x13121cd2
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0xf235d
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_64 0x13121c0d
+[VM] JUMP_DEC
+[UNCONDITIONAL]
+VmNop: 0x13121cd2
+[VirtualCall] 0x13121c09 => 0x13020da0
+[BLOCKS] 4
+0x13103DDB => 0x13121CD2
+0x13121CD2 =>
+0x13167BD5 => 0x13103DDB
+0x1317D580 => 0x13167BD5
+[FunctionCall] 0x13020da0 (<not an import>)
+[VirtualStub] 0x1317430b
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x1317d580(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !1406, !noalias !1411
+  %2 = add i64 %1, -8
+  %3 = load i64, i64* %rdx, align 8, !alias.scope !1450, !noalias !1451
+  %4 = load i64, i64* %rbx, align 8, !alias.scope !1452, !noalias !1453
+  %5 = load i64, i64* %rcx, align 8, !alias.scope !1454, !noalias !1455
+  %6 = load i64, i64* %rax, align 8, !alias.scope !1456, !noalias !1457
+  %7 = load i64, i64* %rdi, align 8, !alias.scope !1458, !noalias !1459
+  %8 = add i64 %7, 48
+  %9 = inttoptr i64 %8 to i64*
+  store i64 %6, i64* %9, align 1, !noalias !1460
+  %10 = add i64 %7, 56
+  %11 = inttoptr i64 %10 to i64*
+  store i64 %4, i64* %11, align 1, !noalias !1461
+  %12 = add i64 %7, 72
+  %13 = add i64 %7, 64
+  %14 = inttoptr i64 %13 to i64*
+  store i64 %5, i64* %14, align 1, !noalias !1461
+  %15 = inttoptr i64 %12 to i64*
+  store i64 %3, i64* %15, align 1, !noalias !1461
+  %16 = inttoptr i64 %2 to i64*
+  store i64 320291595, i64* %16, align 1, !noalias !1466
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !1471, !noalias !1472
+  store i64 %8, i64* %rdi, align 8, !tbaa !4, !alias.scope !1474, !noalias !1477
+  ret i64 318901664
+}
+
+
+Handling virtual stub: 0x1317430b
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x1317430b
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r14
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 rax
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x13126e2b
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_IMM_64 0x13191b33
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] JUMP_INC
+[UNCONDITIONAL]
+[VirtualBlock] 0x13191b37
+[WORKLIST]: 0
+[EXPLORED]: 1
+[VIRBLOCK]: 0x13191b37
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_64 0xfff5d139
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_IMM_64 0x13191bfc
+[VM] JUMP_INC
+[UNCONDITIONAL]
+VmNop: 0x13191b37
+[VirtualCall] 0x13191c00 => 0x1301d900
+[BLOCKS] 2
+0x1317430B => 0x13191B37
+0x13191B37 =>
+[FunctionCall] 0x1301d900 (<not an import>)
+[VirtualStub] 0x13126e2b
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x1317430b(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !1497, !noalias !1502
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 319974955, i64* %3, align 1, !noalias !1542
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !1497, !noalias !1502
+  ret i64 318888192
+}
+
+
+Handling virtual stub: 0x13126e2b
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x13126e2b
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 r14
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x130ff414
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_IMM_64 0x1301e6b0
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 rdi
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 rsi
+[VM] EXIT
+[EXIT]
+VmExit: 0x13126e2b
+[BLOCKS] 1
+0x13126E2B =>
+[FunctionCall] 0x1301e6b0 (<not an import>)
+[VirtualStub] 0x130ff414
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x13126e2b(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !tbaa !4, !alias.scope !1543, !noalias !1548
+  %2 = add i64 %1, -8
+  %3 = inttoptr i64 %2 to i64*
+  store i64 319812628, i64* %3, align 1, !noalias !1586
+  store i64 %2, i64* %rsp, align 8, !tbaa !4, !alias.scope !1543, !noalias !1548
+  ret i64 318891696
+}
+
+
+Handling virtual stub: 0x130ff414
+[WORKLIST]: 0
+[EXPLORED]: 0
+[VIRBLOCK]: 0x130ff414
+[VM] PUSH_IMM_64 KEY_STUB
+[VM] PUSH_IMM_64 RET_ADDR
+[VM] PUSH_REG_64 rsi
+[VM] PUSH_REG_64 rax
+[VM] PUSH_REG_64 r8
+[VM] PUSH_REG_64 r13
+[VM] PUSH_REG_64 r12
+[VM] PUSH_REG_64 rdi
+[VM] PUSH_REG_64 rbp
+[VM] PUSH_REG_64 rdx
+[VM] PUSH_REG_64 r10
+[VM] PUSH_REG_64 r9
+[VM] PUSH_REG_64 rcx
+[VM] PUSH_REG_64 flags
+[VM] PUSH_REG_64 rbx
+[VM] PUSH_REG_64 r11
+[VM] PUSH_REG_64 r15
+[VM] PUSH_REG_64 r14
+[VM] PUSH_IMM_64 REL_ADDR
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[26]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[27]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[28]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[29]
+[VM] PUSH_IMM_64 0x58
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x8
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VSP_64
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_16 0x6
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0x80
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0xfffffffffffff7ff
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[6]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0xffffffffffffffff
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_IMM_64 0x130faec6
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_64 0x130fadd6
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x130fadd2
+[VirtualBlock] 0x130faec2
+[WORKLIST]: 1
+[EXPLORED]: 1
+[VIRBLOCK]: 0x130fadd2
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_64 0x13134970
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] JUMP_INC
+[UNKNOWN]
+[VirtualBlock] 0x13134974
+[WORKLIST]: 1
+[EXPLORED]: 2
+[VIRBLOCK]: 0x130faec2
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_IMM_64 0x13134970
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] JUMP_INC
+[UNKNOWN]
+[VirtualBlock] 0x13134974
+[WORKLIST]: 1
+[EXPLORED]: 3
+[VIRBLOCK]: 0x13134974
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_16 0xb
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_IMM_64 0xfffffffffffff7ff
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_32_LOW vmregs[17]
+[VM] PUSH_IMM_16 0x20
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] LOAD_SS_64
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_64 0x1
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] SHL_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_8_LOW vmregs[0]
+[VM] POP_VMREG_16_LOWLOW vmregs[19]
+[VM] POP_VMREG_32_LOW vmregs[11]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_16_LOWLOW vmregs[13]
+[VM] PUSH_IMM_16 0x10
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] LOAD_SS_64
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_IMM_64 0x1
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] SHL_64
+[VM] POP_VMREG_64 vmregs[19]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VMREG_32_LOW vmregs[20]
+[VM] POP_VMREG_16_LOWLOW vmregs[6]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VMREG_16_LOWLOW vmregs[6]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[6]
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_16_LOWLOW vmregs[11]
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] LOAD_SS_16
+[VM] POP_VMREG_32_LOW vmregs[20]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[20]
+[VM] POP_VMREG_32_LOW vmregs[11]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VMREG_16_LOWLOW vmregs[1]
+[VM] SHR_16
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[10]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[1]
+[VM] POP_VMREG_32_LOW vmregs[1]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[1]
+[VM] PUSH_IMM_32 0x1
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VMREG_32_LOW vmregs[1]
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[14]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_32_LOW vmregs[1]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_IMM_32 0x0
+[VM] PUSH_VMREG_16_LOWLOW vmregs[0]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_VMREG_16_LOWLOW vmregs[16]
+[VM] PUSH_IMM_16 0x10
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] LOAD_SS_32
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_32 0x1
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[14]
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[14]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_32_LOW vmregs[0]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[0]
+[VM] POP_VMREG_16_LOWLOW vmregs[17]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[18]
+[VM] POP_VMREG_8_HIGH vmregs[10]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_IMM_32 0x1
+[VM] PUSH_IMM_16 0x1f
+[VM] PUSH_VMREG_32_LOW vmregs[10]
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NOR_32
+[VM] POP_VMREG_64 vmregs[4]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_32_LOW vmregs[10]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_16 0x0
+[VM] PUSH_VMREG_16_LOWLOW vmregs[3]
+[VM] PUSH_IMM_16 0x10
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[10]
+[VM] LOAD_SS_32
+[VM] SHR_32
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_32
+[VM] NAND_32
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_IMM_32 0x1
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[19]
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[4]
+[VM] ADD_32
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_32_LOW vmregs[17]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VMREG_16_LOWLOW vmregs[2]
+[VM] SHR_16
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NOR_16
+[VM] POP_VMREG_64 vmregs[10]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_16_LOWLOW vmregs[17]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[17]
+[VM] POP_VSP_64
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_64 0x13166119
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_16 0x7
+[VM] PUSH_VMREG_8_LOW vmregs[2]
+[VM] SHR_8
+[VM] POP_VMREG_64 vmregs[10]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NAND_8
+[VM] POP_VMREG_64 vmregs[10]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_8_HIGH vmregs[2]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_16 0xf
+[VM] PUSH_VMREG_16_LOWLOW vmregs[2]
+[VM] SHR_16
+[VM] POP_VMREG_64 vmregs[4]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[19]
+[VM] ADD_16
+[VM] POP_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[2]
+[VM] POP_VMREG_32_LOW vmregs[2]
+[VM] PUSH_IMM_32 0x0
+[VM] POP_VMREG_32_HIGH vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] JUMP_INC
+[UNKNOWN]
+[VirtualBlock] 0x1316611d
+[WORKLIST]: 0
+[EXPLORED]: 4
+[VIRBLOCK]: 0x1316611d
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_64 0x1319a100
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] POP_VMREG_32_LOW vmregs[11]
+[VM] POP_VMREG_32_LOW vmregs[20]
+[VM] PUSH_VMREG_32_LOW vmregs[11]
+[VM] POP_VMREG_16_LOWLOW vmregs[21]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[21]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VMREG_16_LOWLOW vmregs[11]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[11]
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_16_LOWLOW vmregs[12]
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[20]
+[VM] LOAD_SS_16
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] POP_VMREG_32_LOW vmregs[20]
+[VM] POP_VMREG_16_LOWLOW vmregs[11]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_16
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_IMM_16 0x8
+[VM] PUSH_VMREG_16_LOWLOW vmregs[11]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[11]
+[VM] SHL_32
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_16_LOWLOW vmregs[7]
+[VM] PUSH_VSP_64
+[VM] PUSH_IMM_64 0x4
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[7]
+[VM] LOAD_SS_16
+[VM] POP_VMREG_32_LOW vmregs[11]
+[VM] POP_VMREG_32_LOW vmregs[7]
+[VM] PUSH_VMREG_32_LOW vmregs[11]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_32_LOW vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x1319a0fc
+[WORKLIST]: 0
+[EXPLORED]: 5
+[VIRBLOCK]: 0x1319a0fc
+[VM] POP_VMREG_64 vmregs[18]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[1]
+[VM] POP_VMREG_64 vmregs[4]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[22]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_8_LOW vmregs[14]
+[VM] POP_VMREG_8_HIGH vmregs[14]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_IMM_16 0x6
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_IMM_64 0x80
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_64
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_IMM_64 0xfffffffffffff7ff
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] NAND_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[12]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[14]
+[VM] PUSH_VMREG_16_LOWLOW vmregs[14]
+[VM] NAND_16
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_16_LOWLOW vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] PUSH_IMM_64 0xffffffffffffffbf
+[VM] NOR_64
+[VM] POP_VMREG_64 vmregs[9]
+[VM] SHR_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_8_HIGH vmregs[14]
+[VM] PUSH_IMM_16 0x1
+[VM] PUSH_IMM_16 0x7
+[VM] PUSH_VMREG_8_LOW vmregs[14]
+[VM] SHR_8
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VSP_64
+[VM] LOAD_SS_8
+[VM] NOR_8
+[VM] POP_VMREG_64 vmregs[11]
+[VM] ADD_8
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_8_HIGH vmregs[14]
+[VM] POP_VMREG_16_LOWLOW vmregs[9]
+[VM] POP_VMREG_32_LOW vmregs[12]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VSP_64
+[VM] POP_VMREG_64 vmregs[25]
+[VM] PUSH_VMREG_8_LOW vmregs[11]
+[VM] PUSH_VMREG_8_LOW vmregs[11]
+[VM] POP_VMREG_8_HIGH vmregs[11]
+[VM] POP_VMREG_8_LOW vmregs[11]
+[VM] PUSH_IMM_64 0x1
+[VM] POP_VMREG_64 vmregs[15]
+[VM] PUSH_IMM_64 0x1317d37b
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[12]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[10]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[4]
+[VM] PUSH_VMREG_64 vmregs[1]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[15]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[22]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[18]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] JUMP_DEC
+[UNKNOWN]
+[VirtualBlock] 0x1317d377
+[WORKLIST]: 0
+[EXPLORED]: 6
+[VIRBLOCK]: 0x1317d377
+[VM] POP_VMREG_64 vmregs[13]
+[VM] POP_VMREG_64 vmregs[2]
+[VM] POP_VMREG_64 vmregs[17]
+[VM] POP_VMREG_64 vmregs[5]
+[VM] POP_VMREG_64 vmregs[19]
+[VM] POP_VMREG_64 vmregs[11]
+[VM] POP_VMREG_64 vmregs[16]
+[VM] POP_VMREG_64 vmregs[8]
+[VM] POP_VMREG_64 vmregs[6]
+[VM] POP_VMREG_64 vmregs[0]
+[VM] POP_VMREG_64 vmregs[9]
+[VM] POP_VMREG_64 vmregs[21]
+[VM] POP_VMREG_64 vmregs[23]
+[VM] POP_VMREG_64 vmregs[20]
+[VM] POP_VMREG_64 vmregs[3]
+[VM] POP_VMREG_64 vmregs[14]
+[VM] POP_VMREG_64 vmregs[7]
+[VM] POP_VMREG_64 vmregs[10]
+[VM] POP_VMREG_64 vmregs[18]
+[VM] PUSH_IMM_64 0x0
+[VM] PUSH_VMREG_64 vmregs[13]
+[VM] ADD_64
+[VM] POP_VMREG_64 vmregs[15]
+[VM] POP_VMREG_64 vmregs[24]
+[VM] PUSH_VMREG_64 vmregs[8]
+[VM] PUSH_VMREG_64 vmregs[9]
+[VM] PUSH_VMREG_64 vmregs[20]
+[VM] PUSH_VMREG_64 vmregs[23]
+[VM] PUSH_VMREG_64 vmregs[3]
+[VM] PUSH_VMREG_64 vmregs[2]
+[VM] PUSH_VMREG_64 vmregs[7]
+[VM] PUSH_VMREG_64 vmregs[17]
+[VM] PUSH_VMREG_64 vmregs[6]
+[VM] PUSH_VMREG_64 vmregs[14]
+[VM] PUSH_VMREG_64 vmregs[19]
+[VM] PUSH_VMREG_64 vmregs[21]
+[VM] PUSH_VMREG_64 vmregs[11]
+[VM] PUSH_VMREG_64 vmregs[5]
+[VM] PUSH_VMREG_64 vmregs[0]
+[VM] PUSH_VMREG_64 vmregs[16]
+[VM] POP_REG_64 flags
+[VM] POP_REG_64 rax
+[VM] POP_REG_64 rbx
+[VM] POP_REG_64 r12
+[VM] POP_REG_64 r13
+[VM] POP_REG_64 r15
+[VM] POP_REG_64 r11
+[VM] POP_REG_64 r8
+[VM] POP_REG_64 r10
+[VM] POP_REG_64 rsi
+[VM] POP_REG_64 rcx
+[VM] POP_REG_64 rbp
+[VM] POP_REG_64 r9
+[VM] POP_REG_64 r14
+[VM] POP_REG_64 rdx
+[VM] POP_REG_64 rdi
+[VM] EXIT
+[EXIT]
+VmExit: 0x1317d377
+[BLOCKS] 7
+0x130FADD2 => 0x13134974
+0x130FAEC2 => 0x13134974
+0x130FF414 => 0x130FADD2 0x130FAEC2
+0x13134974 => 0x1316611D
+0x1316611D => 0x1319A0FC
+0x1317D377 =>
+0x1319A0FC => 0x1317D377
+[UnmatchedJump]   %71 = load i64, i64* %70, align 1, !noalias !120
+; Function Attrs: alwaysinline mustprogress nounwind ssp uwtable
+define dso_local i64 @F_0x130ff414(i64* noalias nonnull align 8 dereferenceable(8) %rax, i64* noalias nonnull align 8 dereferenceable(8) %rbx, i64* noalias nonnull align 8 dereferenceable(8) %rcx, i64* noalias nonnull align 8 dereferenceable(8) %rdx, i64* noalias nonnull align 8 dereferenceable(8) %rsi, i64* noalias nonnull align 8 dereferenceable(8) %rdi, i64* noalias nonnull align 8 dereferenceable(8) %rbp, i64* noalias nonnull align 8 dereferenceable(8) %rsp, i64* noalias nonnull align 8 dereferenceable(8) %r8, i64* noalias nonnull align 8 dereferenceable(8) %r9, i64* noalias nonnull align 8 dereferenceable(8) %r10, i64* noalias nonnull align 8 dereferenceable(8) %r11, i64* noalias nonnull align 8 dereferenceable(8) %r12, i64* noalias nonnull align 8 dereferenceable(8) %r13, i64* noalias nonnull align 8 dereferenceable(8) %r14, i64* noalias nonnull align 8 dereferenceable(8) %r15, i64* noalias nonnull align 8 dereferenceable(8) %flags, i64 %KEY_STUB, i64 %RET_ADDR, i64 %REL_ADDR) #2 {
+  %1 = load i64, i64* %rsp, align 8, !alias.scope !1587, !noalias !1592
+  %2 = load i64, i64* %rbx, align 8, !alias.scope !1631, !noalias !1632
+  %3 = add i64 %1, 88
+  %4 = inttoptr i64 %3 to i64*
+  %5 = load i64, i64* %4, align 1, !noalias !1633
+  %6 = add i64 %1, 96
+  %7 = inttoptr i64 %6 to i64*
+  %8 = load i64, i64* %7, align 1, !noalias !1633
+  %9 = add i64 %1, 104
+  %10 = inttoptr i64 %9 to i64*
+  %11 = load i64, i64* %10, align 1, !noalias !1633
+  %12 = add i64 %1, 112
+  %13 = inttoptr i64 %12 to i64*
+  %14 = load i64, i64* %13, align 1, !noalias !1633
+  %15 = add i64 %1, 120
+  %16 = inttoptr i64 %15 to i64*
+  %17 = load i64, i64* %16, align 1, !noalias !1633
+  %18 = add i64 %1, 128
+  %19 = inttoptr i64 %18 to i64*
+  %20 = load i64, i64* %19, align 1, !noalias !1633
+  %21 = add i64 %1, 136
+  %22 = inttoptr i64 %21 to i64*
+  %23 = load i64, i64* %22, align 1, !noalias !1633
+  %24 = add i64 %1, 144
+  %25 = inttoptr i64 %24 to i64*
+  %26 = load i64, i64* %25, align 1, !noalias !1633
+  %27 = add i64 %1, 152
+  %28 = inttoptr i64 %27 to i64*
+  %29 = load i64, i64* %28, align 1, !noalias !1633
+  %30 = add i64 %1, 160
+  %31 = inttoptr i64 %30 to i64*
+  %32 = load i64, i64* %31, align 1, !noalias !1633
+  %33 = add i64 %1, 168
+  %34 = inttoptr i64 %33 to i64*
+  %35 = load i64, i64* %34, align 1, !noalias !1633
+  %36 = inttoptr i64 %35 to i64*
+  %37 = load i64, i64* %36, align 1, !noalias !1638
+  %38 = add i64 %35, 8
+  %39 = add i64 %35, -34
+  %40 = inttoptr i64 %39 to i64*
+  store i64 %2, i64* %40, align 1, !noalias !1638
+  %41 = add i64 %35, -42
+  %42 = inttoptr i64 %41 to i64*
+  store i64 %2, i64* %42, align 1, !noalias !1638
+  %43 = inttoptr i64 %38 to i64*
+  %44 = load i64, i64* %43, align 1, !noalias !1643
+  %45 = add i64 %35, 16
+  %46 = inttoptr i64 %45 to i64*
+  %47 = load i64, i64* %46, align 1, !noalias !1643
+  %48 = add i64 %35, 24
+  %49 = inttoptr i64 %48 to i64*
+  %50 = load i64, i64* %49, align 1, !noalias !1643
+  %51 = add i64 %35, 40
+  store i64 1, i64* %rax, align 8, !tbaa !4, !alias.scope !1648, !noalias !1651
+  store i64 %50, i64* %rbx, align 8, !tbaa !4, !alias.scope !1671, !noalias !1672
+  store i64 %14, i64* %r12, align 8, !tbaa !4, !alias.scope !1673, !noalias !1674
+  store i64 %11, i64* %r13, align 8, !tbaa !4, !alias.scope !1675, !noalias !1676
+  store i64 %5, i64* %r15, align 8, !tbaa !4, !alias.scope !1677, !noalias !1678
+  store i64 %17, i64* %r11, align 8, !tbaa !4, !alias.scope !1679, !noalias !1680
+  store i64 %26, i64* %r8, align 8, !tbaa !4, !alias.scope !1681, !noalias !1682
+  store i64 %20, i64* %r10, align 8, !tbaa !4, !alias.scope !1683, !noalias !1684
+  store i64 %32, i64* %rsi, align 8, !tbaa !4, !alias.scope !1685, !noalias !1686
+  store i64 %47, i64* %rcx, align 8, !tbaa !4, !alias.scope !1687, !noalias !1688
+  store i64 %37, i64* %rbp, align 8, !tbaa !4, !alias.scope !1689, !noalias !1690
+  store i64 %23, i64* %r9, align 8, !tbaa !4, !alias.scope !1691, !noalias !1692
+  store i64 %8, i64* %r14, align 8, !tbaa !4, !alias.scope !1693, !noalias !1694
+  store i64 %44, i64* %rdx, align 8, !tbaa !4, !alias.scope !1695, !noalias !1696
+  store i64 %29, i64* %rdi, align 8, !tbaa !4, !alias.scope !1697, !noalias !1698
+  %52 = inttoptr i64 %51 to i64*
+  %53 = load i64, i64* %52, align 1, !noalias !1699
+  %54 = add i64 %35, 48
+  store i64 %54, i64* %rsp, align 8, !tbaa !4, !alias.scope !1700, !noalias !1701
+  ret i64 %53
+}
